@@ -28,18 +28,15 @@ public class DateDifference {
     // get the month difference
         long months = birthFrom.until(today, ChronoUnit.MONTHS);
         birthFrom = birthFrom.plusMonths(months);
- // get the Days difference
+    // get the Days difference
         long days = birthFrom.until(today, ChronoUnit.DAYS);
         birthFrom = birthFrom.plusDays(days);
-
-        long hours = birthFrom.until(today, ChronoUnit.HOURS);
-        birthFrom = birthFrom.plusHours(hours);
-    
+ 
         
 
         System.out.println("From = " + birthday);
         System.out.println("To   = " + today);
-        System.out.printf("The time  difference is\n "+ years +" years.\n" +months +" months \n "+ days +" days");
+        System.out.printf("The time  difference is\n "+ years +" years \n" +months +" months \n "+ days +" days");
             
     
 	}
